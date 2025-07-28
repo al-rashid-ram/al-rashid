@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الراشد لخدمات الإنترنت</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">الراشد نت</div>
+      <ul class="nav-links">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#packages">الباقات</a></li>
+        <li><a href="#coverage">التغطية</a></li>
+        <li><a href="#gallery">معرض الصور</a></li>
+        <li><a href="#news">الأخبار</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+        <li><a href="#" id="openFormBtn">طلب خدمة</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle"><i class="fa fa-bars"></i></div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="container">
+      <h1>أهلاً بك في الراشد لخدمات الإنترنت</h1>
+      <p>تغطية واسعة، سرعة عالية، دعم متواصل على مدار الساعة.</p>
+      <a href="#packages" class="btn-primary">تصفح الباقات</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2>من نحن</h2>
+      <p>نحن شركة رائدة في تقديم خدمات الإنترنت للمناطق المحلية بأعلى جودة وموثوقية.</p>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="section packages-section">
+    <div class="container">
+      <h2>الباقات</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fa-solid fa-wifi fa-3x"></i>
+          <h3>Plus</h3>
+          <p>السعر: 35,000 دينار</p>
+          <p>المدة: شهر</p>
+          <p>مميزات: دعم 24/7، سرعة مستقرة</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-wifi fa-3x"></i>
+          <h3>Stander</h3>
+          <p>السعر: 45,000 دينار</p>
+          <p>المدة: شهر</p>
+          <p>مميزات: بث عالي الجودة، دعم فني مباشر</p>
+        </div>
+         <div class="card">
+          <i class="fa-solid fa-wifi fa-3x"></i>
+          <h3>Turbo</h3>
+          <p>السعر: 60,000 دينار</p>
+          <p>المدة: شهر</p>
+          <p>مميزات: بث عالي الجودة، الافضل للالعاب والتصفح وتحخميل الفديوهات</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Section -->
+  <section id="coverage" class="section coverage-section">
+    <div class="container">
+      <h2>مناطق التغطية</h2>
+      <ul>
+        <li>المسيب</li>
+        <li>الحامية</li>
+        <li>طريق الحامية</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <h2>معرض الصور</h2>
+      <div class="gallery-grid">
+        <img src="images/img1.jpg" alt="صورة برج 1" />
+        <img src="images/img2.jpg" alt="صورة برج 2" />
+        <img src="images/img3.jpg" alt="صورة برج 3" />
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="section news-section">
+    <div class="container">
+      <h2>آخر الأخبار</h2>
+      <article>
+        <h3>توسيع التغطية</h3>
+        <p>تمت إضافة منطقة جديدة للتغطية بداية هذا الشهر.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2>اتصل بنا</h2>
+      <p><i class="fa fa-phone"></i> 0782 457 1236</p>
+      <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/9647824571236" target="_blank" rel="noopener">واتساب: اضغط هنا</a></p>
+      <p><i class="fa-brands fa-facebook"></i> <a href="#" target="_blank" rel="noopener">صفحتنا على فيسبوك</a></p>
+    </div>
+  </section>
+
+  <!-- Request Service Modal -->
+  <div id="requestFormModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeFormBtn">&times;</span>
+      <h2>طلب خدمة</h2>
+      <form id="requestForm">
+        <input type="text" name="fullname" placeholder="الاسم الكامل" required />
+        <input type="tel" name="phone" placeholder="رقم الهاتف" required />
+        <input type="text" name="address" placeholder="العنوان الكامل" required />
+        <select name="package" required>
+          <option value="">اختر الباقة</option>
+          <option value="5mb">باقة 5 ميغا</option>
+          <option value="10mb">باقة 10 ميغا</option>
+        </select>
+        <textarea name="notes" placeholder="ملاحظات إضافية"></textarea>
+        <button type="submit" class="btn-primary">إرسال الطلب</button>
+      </form>
+      <div id="formMessage" class="form-message"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 الراشد لخدمات الإنترنت - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
